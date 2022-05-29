@@ -1,0 +1,48 @@
+body {
+    background-color:lightsteelblue ;
+}
+.parts {
+    width: 250px;
+    height: 340px;
+    border: 1px solid black;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.parts > img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.parts .go-to-parts {
+    font-size: 1.1rem;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.parts .go-to-parts:hover {
+    background: cadetblue;
+}
+.parts .go-to-parts:active {
+    background: red;
+}
+.goods-out {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.goods-out::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-cart img {
+    width: 48px;
+}
+.main-parts img {
+    width: 280px;
+}
+.image-product {
+    width: 100px;
+}

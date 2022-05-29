@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../admin/css/styleCRUDModels.css" />
+    <title>Панель CRUD для моделей</title>
+</head>
+<body>
+    <div class="crud-field">
+        <h2 class="modelsCRUD_title">Модели</h2>
+        <div class="models-out"></div></br>
+        <div class="form_item">
+            <div>
+                <label for="formName" class="form_label">Название:</label>
+                <input id="mname" type="text" name="mname" class="form_input _req"/>
+            </div>
+            <div>
+                <label for="formVIN" class="form_label">Обозначение модели по VIN:</label>
+                <input id="mvin" type="text" name="mvin" class="form_input _req"/>
+            </div>
+        </div>
+        <div class="form_item">
+            <div class="form_label">Прикрепить фото</div>
+            <div class="file">
+                <div class="file_item">
+                    <input id="formImage" accept=".jpg, .png" type="file" name="image" class="file_input" />
+                    <div class="file_button">Выбрать</div>
+                </div>
+                <div id="formPreview" class="file_preview"></div>
+            </div>
+        </div>
+        <input type="hidden" id="mid">
+        <button class="add-model-to-db">Обновить</button></br>
+        <button class="delete-model-from-db">Удалить</button></br>
+
+        <h2 class="partsCRUD_title">Детали для моделей</h2>
+        <div class="part-out"></div></br>
+        <div id="fPreview" class="file_preview"></div>
+        <input type="hidden" id="pid">
+        <button class="add-part-for-model">Обновить</button></br>
+        <button class="delete-part-for-model">Удалить</button>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modelsCRUD.js"></script>
+</body>
+</html>

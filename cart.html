@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styleCart.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="main-cart"></div>
+    <div class="email-field">
+        <h1 class="form_title">Форма для заказа</h1>
+        <div class="form_item">
+            <label for="formName" class="form_label">Имя*:</label>
+            <input id="ename" type="text" name="name" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formEmail" class="form_label">E-mail*:</label>
+            <input id="email" type="text" name="email" class="form_input _req" />
+        </div>
+        <div class="form_item">
+            <label for="formPhone" class="form_label">Телефон*:</label>
+            <input id="ephone" type="text" name="phone" class="form_input _req"/>
+        </div>
+        <p><button class="send-email">Заказать</button></p>
+    </div>
+</main>
+<footer></footer>
+<dialog class="loading" id="loading">
+    <img src="images/loading.gif">
+</dialog>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

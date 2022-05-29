@@ -1,0 +1,27 @@
+{
+    "1": {
+      "part": "Кузов",
+      "img" : "Carcase.png",
+      "category" : "Кузов"
+    },
+    "2": {
+      "part": "Жидкости",
+      "img" : "Fluid.png",
+      "category" : "Жидкость"
+    },
+    "3": {
+      "part": "Электрика",
+      "img" : "Electrical.png",
+      "category" : "Электрика"
+    },
+    "4": {
+      "part": "Подвеска",
+      "img" : "Suspension.png",
+      "category" : "Подвеска"
+    },
+    "5": {
+        "part": "Элементы силового оборудования",
+        "img" : "Power.png",
+        "category" : "Силовое"
+    }
+}

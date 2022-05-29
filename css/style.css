@@ -1,0 +1,235 @@
+body {
+    background-color:lightblue ;
+}
+
+h1 {
+    text-align: center;
+    color: forestgreen;
+    text-shadow: 5px 2px 4px gray;
+    font-family: Florence, cursive;
+}
+
+.input-find{
+    color: forestgreen;
+    font-size: x-large;
+    text-shadow: 5px 2px 4px gray;
+    font-family: Florence, cursive;
+}
+
+.parts-find > p{
+    color: forestgreen;
+    font-size: x-large;
+    text-shadow: 5px 2px 4px gray;
+    font-family: Florence, cursive;
+}
+
+.parts-find img{
+    width: 480px;
+}
+
+.models-find > p{
+    color: forestgreen;
+    font-size: x-large;
+    text-shadow: 5px 2px 4px gray;
+    font-family: Florence, cursive;
+}
+
+.cart {
+    width: 250px;
+    height: 340px;
+    border: 1px solid grey;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.cart > input {
+    max-width: 100px;
+    max-height: 100px;
+}
+.cart .name {
+    color: forestgreen;
+    text-shadow: 5px 2px 4px gray;
+    font-family: Florence, cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.cart .cost {
+    font-size: 1.3rem;
+    margin: 30px 0;
+    color: green;
+}
+.cart .add-to-cart {
+    font-size: 1.1rem;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.cart .add-to-cart:hover {
+    background: cadetblue;
+}
+.cart .add-to-cart:active {
+    background: red;
+}
+.goods-out {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.goods-out::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-cart img {
+    width: 48px;
+}
+.main-product img {
+    width: 280px;
+}
+.image-product {
+    width: 100px;
+}
+
+.models {
+    width: 250px;
+    height: 340px;
+    border: 1px solid grey;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.models .model {
+    color: blue;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Florence, cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.models .go-to-parts {
+    font-size: 1.1rem;
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.models .go-to-parts:hover {
+    background: cadetblue;
+}
+.models .go-to-parts:active {
+    background: red;
+}
+.models img {
+    width: 250px;
+}
+
+.parts {
+    width: 250px;
+    height: 340px;
+    border: 1px solid grey;
+    margin: 30px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+.parts h1 {
+    color: blue;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Florence, cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.parts .go-to-parts {
+    font-size: 1.1rem;
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.parts .go-to-parts:hover {
+    background: cadetblue;
+}
+.parts .go-to-parts:active {
+    background: red;
+}
+.parts img {
+    width: 200px;
+}
+
+.product .add-to-cart {
+    font-size: 1.1rem;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}    
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000CC;
+}
+.loading > img{
+    width: 200px;
+}
+
+#find-by-vin{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px; 
+    background-color: #7a956b;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 #161b13;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+}
+#find-by-vin:hover{
+    background-color: #4f6146;
+}
+#find-by-vin:active{
+    top: 3px;
+    box-shadow: 0 2px 0 #161b13;
+}
+
+#vin{
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 18px;
+    transition: all 0.5s ease 0s;
+}
+#vin:focus{
+    box-shadow: 0 0 15px #7a956b;
+    
+}

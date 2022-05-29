@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../admin/css/styleCRUDPoduct.css" />
+    <title>Панель CRUD</title>
+</head>
+<body>
+    <div class="crud-field">
+        <div class="form_item">
+            <div class="goods-out"></div>
+        </div>
+        <h2 class="CRUD_title">Товар</h2>
+        <div class="form_item">
+            <label for="formName" class="form_label">Название:</label>
+            <input id="gname" type="text" name="name" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formCost" class="form_label">Цена:</label>
+            <input id="gcost" type="text" name="cost" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formSKU" class="form_label">Артикул:</label>
+            <input id="gsku" type="text" name="sku" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formManufacturer" class="form_label">Производитель:</label>
+            <input id="gmanufacturer" type="text" name="manufacturer" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formCategory" class="form_label">Категория(тип):</label>
+            <input id="gcategory" type="text" name="category" class="form_input _req"/>
+        </div>
+        <div class="form_item">
+            <label for="formDescription" class="form_label">Описание:</label>
+            <textarea name="description" id="gdescr" class="form_input"></textarea>
+        </div>
+        <div class="form_item">
+            <div class="form_label">Прикрепить фото</div>
+            <div class="file">
+                <div class="file_item">
+                    <input id="formImage" accept=".jpg, .png" type="file" name="image" class="file_input" />
+                    <div class="file_button">Выбрать</div>
+                </div>
+                <div id="formPreview" class="file_preview"></div>
+            </div>
+        </div>
+        <input type="hidden" id="gid">
+        <button class="add-to-db">Обновить</button></br>
+        <button class="delete-to-db">Удалить</button>
+    </div>
+    <div class="integration_data">
+        <h2 class="integration_title">Миграция и интеграция данных продаж в 1С</h2>
+        <button id="integration">Осуществить интеграцию данных</button>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
